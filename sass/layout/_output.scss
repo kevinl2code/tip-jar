@@ -1,0 +1,14 @@
+.output {
+    background-color: $primary-color-medium;
+    height: 10vh;
+    margin-top: 2rem;
+    border-radius: 2rem;
+
+    &__text {
+        font-family: 'Chango', cursive;
+        text-align: center;
+        font-size: 3rem;
+        line-height: 10vh;
+        color: $primary-color-dark;
+    }
+}

@@ -1,0 +1,14 @@
+.input {
+    background-color: $primary-color-medium;
+    border-radius: 2rem;
+
+    &__heading {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+        &--text {
+            text-align: center;
+            font-size: 2.8rem;
+        }
+    }
+}

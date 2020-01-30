@@ -1,0 +1,111 @@
+.form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: $primary-color-medium;
+  height: fit-content;
+  border-radius: 2rem;
+
+  &__item {
+    position: relative;
+    width: 100%;
+    height: 4rem;
+    margin-left: auto;
+    margin-bottom: 13px;
+
+    &--radio {
+      height: 4.5rem;
+      margin-top: -1rem;
+      margin-bottom: 2rem;
+    }
+
+    &--text {
+      display: inline-block;
+      position: absolute;
+      left: 1rem;
+      font-size: 2.5rem;
+    }
+  }
+
+  &__input {
+    display: inline-block;
+    position: absolute;
+    height: 3.5rem;
+    right: 1rem;
+    width: 40%;
+    -moz-text-align-last: right;
+    -ms-text-align-last: right;
+    text-align-last: right;
+    background-color: $primary-color-light;
+    border-style: none;
+    direction: rtl;
+    padding-right: 1rem;
+
+    &::placeholder {
+      text-align: right;
+      padding-right: .5rem;
+    }
+  }
+
+  &__label {
+    display: inline-block;
+    position: absolute;
+    left: 1rem;
+    margin-bottom: 3px;
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  &__radio {
+    display: inline-block;
+    position: absolute;
+    width: 40%;
+    right: 1rem;
+
+    &--choice {
+      display: block;
+      position: relative;
+      margin-bottom: 2rem;
+
+      &-input {
+        position: absolute;
+        display: inline-block;
+        right: 0;
+        margin-top: 1.2rem;
+      }
+
+      &-label {
+        position: absolute;
+        display: inline-block;
+        right: 3rem;
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &__button {
+    display: block;
+    border-style: none;
+    border-radius: 10rem;
+    width: 40%;
+    height: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $primary-color-dark;
+    font-family: inherit;
+    color: $primary-color-light;
+    letter-spacing: .75rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+    transition: all .1s ease-in;
+
+    &:active {
+      background-color: $primary-color-light;
+      color: $primary-color-dark;
+    }
+  }
+}
+
+#div-complexity {
+  display: none;
+}

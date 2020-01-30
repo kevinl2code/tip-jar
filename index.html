@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://fonts.googleapis.com/css?family=Chango&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Chango|Palanquin+Dark:400,500,600,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Tipping Guide</title>
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="header__text">TIP JAR</h1>
+        </header>
+        <div class="input">
+            <div class="input__heading">
+                <h1 class="input__heading--text">How much should I tip?</h1>
+            </div>
+            <form action="" class="form" id="input-form">
+                <div class="form__item">
+                    <label class="form__label" for="amount">Amount</label>
+                    <input class="form__input" id="amount"placeholder="Enter amount" required></input>
+                </div>
+                <div class="form__item">
+                    <label class="form__label" for="percent">Type of Service</label>
+                    <select class="form__input" name="service-type" id="service-type">
+                        <option value="full-table"  selected>Table Service</option>
+                        <option value="fast-casual">Casual Dining</option>
+                        <option value="take-out">Take Out</option>
+                        <option value="delivery">Delivery</option>
+                    </select>
+                </div> 
+                <div class="form__item form__item--radio" id="div-complexity">
+                    <p class="form__item--text">Order Size</p>
+                    <div class="form__radio">
+                        <div class="form__radio--choice">
+                            <label class="form__radio--choice-label" for="small">Small</label>
+                            <input class="form__radio--choice-input" type="radio" id="small" name="complexity" value="small"
+                        checked>
+                        </div>
+                        <div class="form__radio--choice">
+                            <label class="form__radio--choice-label" for="large">Large</label>
+                            <input class="form__radio--choice-input" type="radio" id="large" name="complexity" value="large">
+                        </div>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <label class="form__label" for="quality">Service Quality</label>
+                    <select class="form__input" name="quality" id="quality">
+                        <option value="excellent">Excellent</option>
+                        <option value="above">Above average</option>
+                        <option value="average" selected>Average</option>
+                        <option value="acceptable">Acceptable</option>
+                    </select>
+                </div>
+                <div class="form__item">
+                    <button class="form__button" type="submit">CHECK</button>
+                </div>
+            </form>
+          </div>
+          
+          <div class="output">
+            <div class="output__text">
+                <h2 id="output-text"></h2>
+            </div>
+          </div>
+          <footer class="footer">
+              <p class="footer__text">Designed and Built by Kevin Smith &copy; 2020</p>
+          </footer>
+          <script src="scripts/app.js"></script>
+    </body>
+</html>
